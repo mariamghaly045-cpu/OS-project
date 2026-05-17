@@ -1,0 +1,22 @@
+Scenario C — Fairness test
+Processes: P1(0,8), P2(0,8), P3(0,8)
+Time Quantum (RR): 2
+
+Expected Round Robin (RR)
+Average WT: 14.00
+Average TAT: 22.00
+Average RT: 2.00
+Per-process:
+  P1: WT=12, TAT=20, RT=0
+  P2: WT=14, TAT=22, RT=2
+  P3: WT=16, TAT=24, RT=4
+
+Expected SJF (Non-preemptive)
+Average WT: 8.00
+Average TAT: 16.00
+Average RT: 8.00
+Per-process:
+  P1: WT=0, TAT=8,  RT=0
+  P2: WT=8, TAT=16, RT=8
+  P3: WT=16, TAT=24, RT=16
+

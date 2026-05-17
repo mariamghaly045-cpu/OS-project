@@ -1,0 +1,24 @@
+Scenario D — Long-job sensitivity
+Processes: P1(0,20), P2(1,2), P3(2,3), P4(3,1)
+Time Quantum (RR): 4
+
+Expected Round Robin (RR)
+Average WT: 4.75
+Average TAT: 11.25
+Average RT: 3.25
+Per-process:
+  P1: WT=6, TAT=26, RT=0
+  P2: WT=3, TAT=5,  RT=3
+  P3: WT=4, TAT=7,  RT=4
+  P4: WT=6, TAT=7,  RT=6
+
+Expected SJF (Non-preemptive)
+Average WT: 14.50
+Average TAT: 21.00
+Average RT: 14.50
+Per-process:
+  P1: WT=0,  TAT=20, RT=0
+  P2: WT=20, TAT=22, RT=20
+  P3: WT=21, TAT=24, RT=21
+  P4: WT=17, TAT=21, RT=17
+

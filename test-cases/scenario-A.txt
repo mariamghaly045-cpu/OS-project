@@ -1,0 +1,24 @@
+Scenario A — Basic mixed workload
+Processes: P1(0,6), P2(1,4), P3(2,2), P4(3,5)
+Time Quantum (RR): 3
+
+Expected Round Robin (RR)
+Average WT: 7.75
+Average TAT: 12.00
+Average RT: 2.75
+Per-process:
+  P1: WT=8,  TAT=14, RT=0
+  P2: WT=10, TAT=14, RT=2
+  P3: WT=4,  TAT=6,  RT=4
+  P4: WT=9,  TAT=14, RT=5
+
+Expected SJF (Non-preemptive)
+Average WT: 5.00
+Average TAT: 9.25
+Average RT: 5.00
+Per-process:
+  P1: WT=0, TAT=6,  RT=0
+  P2: WT=7, TAT=11, RT=7
+  P3: WT=4, TAT=6,  RT=4
+  P4: WT=9, TAT=14, RT=9
+

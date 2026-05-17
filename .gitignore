@@ -1,0 +1,11 @@
+target/
+.idea/
+.vscode/
+.classpath
+.project
+.settings/
+
+# OS / temp
+*.log
+*.tmp
+

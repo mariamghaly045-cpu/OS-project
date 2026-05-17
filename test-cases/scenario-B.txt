@@ -1,0 +1,26 @@
+Scenario B — Short-job-heavy workload
+Processes: P1(0,1), P2(0,2), P3(1,1), P4(2,3), P5(3,1)
+Time Quantum (RR): 2
+
+Expected Round Robin (RR)
+Average WT: 1.80
+Average TAT: 3.40
+Average RT: 1.60
+Per-process:
+  P1: WT=0, TAT=1, RT=0
+  P2: WT=1, TAT=3, RT=1
+  P3: WT=2, TAT=3, RT=2
+  P4: WT=3, TAT=6, RT=2
+  P5: WT=3, TAT=4, RT=3
+
+Expected SJF (Non-preemptive)
+Average WT: 1.20
+Average TAT: 2.80
+Average RT: 1.20
+Per-process:
+  P1: WT=0, TAT=1, RT=0
+  P2: WT=2, TAT=4, RT=2
+  P3: WT=0, TAT=1, RT=0
+  P4: WT=3, TAT=6, RT=3
+  P5: WT=1, TAT=2, RT=1
+

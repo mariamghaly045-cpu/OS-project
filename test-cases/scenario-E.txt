@@ -1,0 +1,13 @@
+Scenario E — Validation test
+User should try submitting invalid rows (and the GUI must show errors without crashing).
+
+Suggested invalid input (quantum can be any positive integer, e.g. 2):
+  Row 1: Process ID = "P1", Arrival = "0", Burst = "-1"      (burst invalid)
+  Row 2: Process ID = "",   Arrival = "0", Burst = "2"        (empty ID)
+  Row 3: Process ID = "P1", Arrival = "1", Burst = "3"        (duplicate ID)
+
+Expected validation errors should include:
+  - "Burst Time must be > 0."
+  - "Process ID is required and cannot be empty."
+  - "Duplicate Process ID: 'P1'"
+
